@@ -10,7 +10,6 @@ $(document).ready(function() {
                 }
             }
             pubnub.publish(publishConfig, function(status, response) {
-                //console.log(status, response);
                 $("#chatMessageText").val('');
             })
         }
