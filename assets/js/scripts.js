@@ -9,7 +9,6 @@ $(document).ready(function() {
                     username: $("#usernameText").val()
                 }
             }
- 
             pubnub.publish(publishConfig, function(status, response) {
                 //console.log(status, response);
                 $("#chatMessageText").val('');

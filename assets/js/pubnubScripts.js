@@ -20,9 +20,17 @@
             }
         },
         message: function(message) {
+                    //             <div class="chat-box-left">
+                    //         Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    //        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    // </div>
+
             var username = message.message.username;
             var text = message.message.messageText;
-            document.getElementById("chatArea").innerHTML += username + " > " + text + '</br>';
+            //document.getElementById("chatArea").innerHTML += username + " > " + text + '</br>';
+
+            document.getElementById("chatArea").innerHTML += "<div class='chat-box-name-left'> <img src='assets/img/user.jpg' alt='bootstrap Chat box user image' class='img-circle'/> </div>";
+            document.getElementById("chatArea").innerHTML += "<div class='chat-box-left'>" + username + ">" + text + "</div>";
             console.log("New Message!!", message);
         },
         presence: function(presenceEvent) {
