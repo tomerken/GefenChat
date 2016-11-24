@@ -18,7 +18,7 @@
             var text = message.message.messageText;
             document.getElementById("chatArea").innerHTML += "<div class='chat-box-name-left'> <img src='assets/img/user.jpg' alt='bootstrap Chat box user image' class='img-circle'/>" + username + "</div>";
             document.getElementById("chatArea").innerHTML += "<div class='chat-box-left'>" + text + "</div>";
-        },
+        }
     })      
     pubnub.subscribe({
         channels: ['GefenChat']
